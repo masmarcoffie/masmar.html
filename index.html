@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>حسابات المحل</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -22,28 +21,28 @@
 
         .container {
             background: #222;
-            padding: 25px;
-            width: 95%;
-            max-width: 420px;
-            border-radius: 20px;
+            padding: 40px; /* تكبير المساحة الداخلية */
+            width: 100%; /* ياخذ عرض الشاشة كامل */
+            max-width: 550px; /* تكبير الحد الأقصى */
+            border-radius: 25px;
             text-align: center;
-            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
         }
 
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
             background: #444;
             border-radius: 50%;
             margin: auto;
-            margin-bottom: 18px;
+            margin-bottom: 25px;
             background-size: cover;
             background-position: center;
         }
 
         h2 {
-            margin-bottom: 20px;
-            font-size: 22px;
+            margin-bottom: 30px;
+            font-size: 26px;
             font-weight: 700;
         }
 
@@ -51,19 +50,24 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 12px;
+            gap: 14px;
+            margin: 15px 0;
+            padding: 18px;
+            border-radius: 16px;
             text-decoration: none;
             color: #fff;
-            font-size: 17px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 700;
             transition: 0.2s;
         }
 
+        .btn img {
+            width: 36px;
+            height: 36px;
+        }
+
         .btn:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
             opacity: 0.9;
         }
 
@@ -71,30 +75,20 @@
         .tiktok { background: #000; border: 2px solid #ff0050; }
         .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
-        .btn img {
-            width: 26px;
-            height: 26px;
-        }
-
-        /* تحسين إضافي للجوال */
         @media (max-width: 480px) {
             .container {
-                padding: 20px;
-                border-radius: 16px;
-            }
-
-            h2 {
-                font-size: 20px;
+                padding: 35px;
+                max-width: 95%;
             }
 
             .btn {
-                padding: 12px;
-                font-size: 16px;
+                padding: 20px;
+                font-size: 21px;
             }
 
-            .logo {
-                width: 90px;
-                height: 90px;
+            .btn img {
+                width: 38px;
+                height: 38px;
             }
         }
     </style>
@@ -104,24 +98,20 @@
 
 <div class="container">
 
-    <!-- شعار المحل (اختياري) -->
     <div class="logo" style="background-image: url('YOUR_LOGO.png');"></div>
 
-    <h2>تابعونا على  </h2>
+    <h2>تابعونا على حسابات المحل</h2>
 
-    <!-- سناب -->
     <a class="btn snap" href="https://snapchat.com/t/1CJwglDl" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/000000/snapchat.png">
         سناب شات
     </a>
 
-    <!-- تيك توك -->
     <a class="btn tiktok" href="https://www.tiktok.com/@msmr.ksa?_r=1&_t=ZS-95hhZUi6Tll" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png">
         تيك توك
     </a>
 
-    <!-- انستغرام -->
     <a class="btn insta" href="https://www.instagram.com/msmr.ksa?igsh=a2FudHJuMmcwcjlu&utm_source=qr" target="_blank">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png">
         إنستغرام
