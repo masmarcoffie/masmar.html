@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حسابات المحل</title>
+    <title>MsMr</title>
 
     <style>
         body {
             font-family: "Tajawal", sans-serif;
-            text-align: center;
             background: #f7f7f7;
-            padding: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* المربع الكبير (الكونتينر) */
+        .container {
+            width: 95%;
+            max-width: 600px; /* كان 300 → الآن دبل ×3 */
+            margin: 40px auto;
+            background: white;
+            padding: 40px; /* كان 20 → الآن دبل */
+            border-radius: 25px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.15);
+            text-align: center;
         }
 
         .logo {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 20px;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 25px;
             background-size: cover;
             background-position: center;
             border-radius: 50%;
         }
 
         h2 {
-            margin-bottom: 25px;
-            font-size: 24px;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: bold;
         }
 
         .btn {
             display: block;
-            width: 85%;
-            max-width: 350px;
-            margin: 12px auto;
-            padding: 14px;
-            border-radius: 12px;
+            width: 100%;
+            margin: 18px auto;
+            padding: 22px;
+            border-radius: 18px;
             color: white;
-            font-size: 20px;
+            font-size: 26px;
             text-decoration: none;
             font-weight: bold;
         }
 
         .btn img {
-            width: 28px;
+            width: 40px;
             vertical-align: middle;
-            margin-left: 10px;
+            margin-left: 12px;
         }
 
         .snap { background: #fffc00; color: black; }
@@ -54,12 +66,28 @@
 
 <body>
 
-    <!-- الشعار الجديد فقط -->
-    <div class="logo" style="background-image: url('logo2.jpeg');"></div>
+    <div class="container">
 
-    <h2>تابعونا على حسابات المحل</h2>
+        <div class="logo" style="background-image: url('logo2.jpeg');"></div>
 
-    <!-- سناب -->
-    <a class="btn snap" href="https://snapchat.com/t/1CJwglDl" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/000000/snapchat.png">
-        سناب شات
+        <h2>MsMr</h2>
+
+        <a class="btn snap" href="https://snapchat.com/t/1CJwglDl" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/000000/snapchat.png">
+            سناب شات
+        </a>
+
+        <a class="btn tiktok" href="https://www.tiktok.com/@msmr.ksa?_r=1&_t=ZS-95hhZUi6Tll" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png">
+            تيك توك
+        </a>
+
+        <a class="btn insta" href="https://www.instagram.com/msmr.ksa?igsh=a2FudHJuMmcwcjlu&utm_source=qr" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png">
+            إنستغرام
+        </a>
+
+    </div>
+
+</body>
+</html>
